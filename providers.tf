@@ -1,12 +1,12 @@
 provider "google" {
-  project = "<PROJECT_ID>"
+  project = "student-00886"
   region  = "us-central1"
   zone    = "us-central1-a"
 }
 
 terraform {
   backend "gcs" {
-    bucket = "BACKEND_BUCKET_NAME"
+    bucket = "student-00886"
     prefix = "terraform/state"
   }
 } 
